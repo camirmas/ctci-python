@@ -53,7 +53,17 @@ class LinkedList:
 
         return self.head
 
+    
+    def len(self):
+        count = 0
 
+        node = self.head
+
+        while node:
+            count += 1
+            node = node.next
+
+        return count
 
 
 class Node:
